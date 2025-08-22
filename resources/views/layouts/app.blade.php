@@ -21,7 +21,14 @@
         
         @include('includes.asideBar')
 
+        <main class="flex-1 flex flex-col overflow-hidden">
+
+        @include('includes.header')
+
         @yield('content')
+
+
+        </main>
     </div>
 
     @vite(['resources/js/home.js'])
